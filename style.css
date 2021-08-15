@@ -2,7 +2,7 @@
     display: flex; align-items: center; justify-content: center; width: 100%; height: 33%;
 }
 
-.boton{
+.botonarriba{
     width: 33%;
     height: 100%;
     display: flex;
@@ -31,10 +31,23 @@
 }
 
 .filadosbotones{
-    display: flex; align-items: center; justify-content: space-between; width: 100%; height: 33%;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: 100%; 
+    height: 33%;
 }
 
 .botonizquierdo{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    font-size: 100px;
     background-color: rgb(6, 122, 85);
 }
 
@@ -43,7 +56,7 @@
 }
 
 .botonizquierdo:hover {
-    background-color: aquamarine;
+    background-color: rgb(75, 180, 137);
 }
 
 .botonizquierdo:active {
@@ -51,6 +64,15 @@
 }
 
 .botonderecho{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    font-size: 100px;
     background-color: rgb(184, 184, 29);
 }
 
@@ -59,7 +81,7 @@
 }
 
 .botonderecho:hover {
-    background-color: rgb(236, 236, 115);
+    background-color: rgb(216, 216, 73);
 }
 
 .botonderecho:active {
@@ -67,6 +89,15 @@
 }
 
 .botonabajo{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    font-size: 100px;
     background-color: #f74a4a;
 }
 

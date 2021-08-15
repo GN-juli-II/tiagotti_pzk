@@ -19,6 +19,11 @@
     <div class="boton botonizquierdo" onclick="apretarboton('izquierdo')">
      
     </div> 
+    <div id="nombreJugadoruno" style="background-color: rgb(62, 62, 148);align-items: center;display: flex;justify-content: center; height: 80% ; width: 16.5%; color: white; font-size: 25px; ">
+
+    </div>
+    <div id="nombreJugadorDos" style="background-color: rgb(100, 45, 139); align-items: center;display: flex;justify-content: center; height: 80%; width: 16.5%;color: white;font-size: 25px; ">
+    </div>
      <div class="boton botonderecho" onclick="apretarboton('derecho')">
         
     </div>
@@ -34,10 +39,29 @@
 </body>
 </html>
 <script>
-    console.log("holamundo")
-    alert("holamundo")
-    
+
+var activoJugadorUno = true 
+var nombreJugadorUno = prompt( "ingrese nombre de jugador/a numero uno" , "nombre de jugador")
+var nombreJugadorDos = prompt("ingrese nombre de jugador/a numero dos" , "nombre de jugador")
+    document.getElementById("nombreJugadoruno").innerHTML = nombreJugadorUno
+    document.getElementById("nombreJugadorDos").innerHTML = nombreJugadorDos
+
     function apretarboton(boton){
-        alert("apreto boton " + boton )
+        pintarboton()
+    }
+    function  pintarboton(){
+   
+        if(activoJugadorUno == true){
+            document.getElementById("nombreJugadoruno").style.backgroundColor = "blue" 
+            document.getElementById("nombreJugadorDos").style.backgroundColor = "white"
+            document.getElementById("nombreJugadorDos").style.color = "black"
+            activoJugadorUno = false 
+        } else{
+            document.getElementById("nombreJugadoruno").style.backgroundColor = "white" 
+            document.getElementById("nombreJugadoruno").style.color = "black"
+            document.getElementById("nombreJugadorDos").style.backgroundColor = "blue" 
+            activoJugadorUno = true
+        }
+
     }
 </script>
